@@ -39,11 +39,8 @@
             }
             
         }
-        .weebo{
-            img{
-                width: 100%;
-            }
-        }
+
+        
         .buzz,.tok,.pokemon{
             img{
                 width: 200px;
@@ -118,7 +115,15 @@
 
     @include mixins.for-ipad-layout{
         height: 100vh;
+        .modal{
+            .weebo{
+                img{
+                    width:30%;
+                }
+        }
         .projects{
+          
+            }
 
             grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
         }
@@ -129,6 +134,15 @@
         .projects{
             width: 60%;
             grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        }
+    }
+    @include mixins.for-mobile-layout{
+        .modal{
+            .weebo{
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
 }
