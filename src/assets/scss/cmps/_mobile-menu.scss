@@ -1,0 +1,56 @@
+.mobile-menu{
+    background-color: #2b3e4f;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    button{
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: whitesmoke;
+        font-size: 1.3rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        
+    }
+
+    .hamburger{
+        display: block;
+        width: 50px;
+    }
+
+    h2{
+        color: rgb(240, 116, 116);
+        text-align: center;
+        font-size: 2rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            transition: all 0.3s;
+            width: fit-content;
+
+            &:hover{
+                transition: all 0.3s;
+                color: lightcoral;
+            }
+
+
+        }
+    }
+
+    
+}

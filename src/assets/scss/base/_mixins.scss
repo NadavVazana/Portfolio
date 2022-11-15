@@ -1,0 +1,27 @@
+@mixin for-desktop-layout{
+    @media (min-width:1500px) {
+        @content;
+        
+    }
+}
+
+@mixin for-normal-layout {
+    @media (min-width:1200px) {
+        @content;
+    }
+    
+}
+
+@mixin for-ipad-layout {
+    @media (min-width:950px) {
+        @content;
+    }
+}
+
+@mixin for-mobile-layout{
+    @media (max-width:970px) {
+        @content;
+        
+    }
+}
+

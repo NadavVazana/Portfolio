@@ -1,0 +1,74 @@
+@use '../base/mixins' as mixins;
+
+.about{
+    border-bottom: rgba(128, 128, 128, 0.353) 1px solid;
+    // height: 100vh;
+    .skills{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 60px;
+        justify-content: center;
+    }
+
+    h1{
+        padding-top: 30px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    div:not(.skills,.summary){
+        img{
+            width: 50px;
+            padding-bottom: 50px;
+            align-self: center;
+        }
+
+        p{
+            text-align: center;
+            width:70%;
+            align-self: center;
+            color: rgb(53, 51, 51);
+        }
+
+        h3{
+            text-align: center;
+            font-size: 1.3rem;
+        }
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .summary{
+        padding-bottom: 100px;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            text-align: center;
+            font-size: 2rem;
+        }
+        padding-top:100px;
+
+        p{
+            line-height: 35px;
+            width: 80%;
+            padding-top: 10px;
+        }
+    }
+    @include mixins.for-ipad-layout{
+        height: 100vh;
+
+        .summary{
+            padding-top: 200px;
+        }
+        .skills{
+            flex-direction: unset;
+            padding-inline-start: 20px;
+        }
+    }
+}

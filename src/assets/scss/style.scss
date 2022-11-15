@@ -1,0 +1,18 @@
+// BASE
+@import url('./base/_fonts.scss');
+@import url('./base/_base.scss');
+@import './base/mixins.scss';
+
+// VIEWS
+
+@import url('./views/_app.scss');
+@import url('./views/_main-app.scss');
+
+// CMPS'
+
+@import url('./cmps/_mobile-menu.scss');
+@import url('./cmps/_contact.scss');
+@import url('./cmps/_gallery.scss');
+@import url('./cmps/_about.scss');
+@import url('./cmps/_home.scss');
+@import url('./cmps/_side-bar.scss');

@@ -1,0 +1,29 @@
+@use '../base/mixins' as mixins;
+
+.main-app{
+    background-color: rgb(216, 216, 220);
+    position: absolute;
+    right: 0;
+
+    .hamburger{
+        width: 35px;
+        padding: 10px;
+        z-index: 1;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+
+    
+
+    @include mixins.for-ipad-layout{
+        width: 80%;
+        .hamburger{
+            display: none;
+        }
+    }
+    @include mixins.for-mobile-layout{
+        width: 100%;
+    }
+}

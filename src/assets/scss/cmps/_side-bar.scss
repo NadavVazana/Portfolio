@@ -1,0 +1,54 @@
+@use '../base/mixins' as mixins;
+.side-bar{
+    background-color: #2b3e4f;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
+    .hamburger{
+        display: block;
+        width: 50px;
+    }
+
+    h2{
+        color: rgb(240, 116, 116);
+        text-align: center;
+        font-size: 2rem;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            transition: all 0.3s;
+            width: fit-content;
+
+            &:hover{
+                transition: all 0.3s;
+                color: lightcoral;
+            }
+
+
+        }
+    }
+
+
+
+    @include mixins.for-mobile-layout{
+            display: none;
+        
+    }
+    @include mixins.for-normal-layout{
+        display: block;
+    }
+
+    
+}

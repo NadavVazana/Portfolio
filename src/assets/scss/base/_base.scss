@@ -1,0 +1,37 @@
+html{
+    font-family: Madefor;
+    height: 100%;
+
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+    h1,h2,h3,h4,h5,h6,p,img,a{
+        &::selection{
+            color: black;
+            background-color: lightcoral;}
+        margin: 0;
+    }
+}
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #423a43;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
