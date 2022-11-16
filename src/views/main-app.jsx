@@ -4,6 +4,7 @@ import { Contact } from "../cmps/contact"
 import { Gallery } from "../cmps/gallery"
 import { Home } from "../cmps/home"
 import { MobileMenu } from "../cmps/mobile-menu"
+import { Skills } from "../cmps/skills"
 
 export const MainApp = ()=>{
     const [isMenu,setMenu] = useState(false)
@@ -15,6 +16,7 @@ export const MainApp = ()=>{
             {isMenu && <MobileMenu setMenu={setMenu} />}
             <Home />
             <About />
+            <Skills/>
             <Gallery />
             <Contact />
         </section>

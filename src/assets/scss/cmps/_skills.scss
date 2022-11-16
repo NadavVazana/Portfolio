@@ -1,0 +1,23 @@
+.skills-list{
+    // height: 100vh;
+    background-color: rgb(238, 235, 235);
+    border-bottom: 1px rgba(128, 128, 128, 0.38) solid;
+    h1{
+        text-align: center;
+        font-size: 2.3rem;
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+    .skills-grid{
+    padding-bottom: 150px;
+    padding-inline:50px;
+
+        gap: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(155px,1fr));
+        img{
+            width: 90px;
+        }
+
+    }
+}
