@@ -1,6 +1,31 @@
 @use '../base/mixins' as mixins;
 
 .contact{
+    
+    .user-msg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        transition: right .4s;
+        z-index: 9999999999999999999999;
+        height: 50px;
+        position: fixed;
+        right: -50%;
+        bottom: 0%;
+        background-color: lightgreen;
+        text-align: center;
+
+        &.open{
+            right: 0;
+            transition: right .4s;
+        }
+    }
+   > :nth-child(4){
+        width: fit-content;
+        cursor: pointer;
+    }
+    z-index: 0;
     position: relative;
     .me{
         border-radius: 50%;
@@ -16,6 +41,7 @@
         padding-top: 60px;
     }
     p{
+        font-weight: 700;
         padding-top: 40px;
         padding-inline-start: 50px;
     }

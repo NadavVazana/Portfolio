@@ -7,6 +7,7 @@ export const MobileMenu = ({setMenu})=>{
             <h2>Navigate</h2>
                 <a onClick={()=>setMenu(false)} href="#home">Home</a>
                 <a onClick={()=>setMenu(false)} href="#about">About</a>
+                <a onClick={()=>setMenu(false)} href="#skills">Skills</a>
                 <a onClick={()=>setMenu(false)} href="#gallery">Gallery</a>
                 <a onClick={()=>setMenu(false)} href="#contact">Contact</a>
             </nav>
